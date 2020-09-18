@@ -1,0 +1,214 @@
+<div class="pageHeading wow fadeInDown">
+			<div class="row">
+				<div class="col-sm-6"><h2>Dashboard</h2></div>
+				<div class="col-sm-6"></div>
+			</div>
+		</div>
+
+        <div class="container-fluid">
+            <div class="row adminSec wow fadeInRight">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="panel panel-video">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-8">
+                                        <div class="huge"><?php echo $categoryCount;?></div>
+                                        <p>Course</p>
+                                        
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <span class="iconSec"><img src="<?php echo base_url().admin_images;?>icon2.png"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="panel panel-images">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-8">
+                                        <div class="huge"><?php echo $userCount;?></div>
+                                        <p>Users</p>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <span class="iconSec"><img src="<?php echo base_url().admin_images;?>icon3.png"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+        </div>
+
+		<!-- <div class="">
+			<section class="col-lg-8">
+		   	<div class="wow fadeInRight animated" data-wow-delay="0.1s">
+			   <div class="addInEx">
+					<ul>
+						<li><a href="#"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Add Income</a></li>
+						<li><a href="#"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Add Expense</a></li>
+					</ul>
+			   </div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><i class="fa fa-long-arrow-right fa-fw"></i> Profit & Loss</h3>
+					</div>
+					<div class="panel-body">
+					   <div class="table-responsive">
+						<table class="table table-bordered table-hover">
+							<thead>
+								<tr>
+									<th>Period</th>
+									<th class="text-right">Income</th>
+									<th class="text-right">Expenses</th>
+									<th class="text-right">Total</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Nov 2017</td>
+									<td class="text-right">4,305.50</td>
+									<td class="text-right">0</td>
+									<td class="text-right totalCal">4,305.50</td>
+								</tr>
+								<tr>
+									<td>Current Year</td>
+									<td class="text-right">17,918.90</td>
+									<td class="text-right">0</td>
+									<td class="text-right totalCal">17,918.90</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><i class="fa fa-long-arrow-right fa-fw"></i> Cash Flow</h3>
+					</div>
+					<div class="panel-body">
+					   <div class="table-responsive">
+						<table class="table table-bordered table-hover">
+							<thead>
+								<tr>
+									<th>Period</th>
+									<th class="text-right">Money In</th>
+									<th class="text-right">Money Out</th>
+									<th class="text-right">Total</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Nov 2017</td>
+									<td class="text-right">4,305.50</td>
+									<td class="text-right">0</td>
+									<td class="text-right totalCal">4,305.50</td>
+								</tr>
+								<tr>
+									<td>Current Year</td>
+									<td class="text-right">17,918.90</td>
+									<td class="text-right">0</td>
+									<td class="text-right totalCal">17,918.90</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><i class="fa fa-long-arrow-right fa-fw"></i> Account Watchlist</h3>
+					</div>
+					<div class="panel-body">
+					   <div class="table-responsive">
+						<table class="table table-bordered table-hover">
+							<thead>
+								<tr>
+									<th>Bank Accounts</th>
+									<th class="text-right">Balance</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Credit Card</td>
+									<td class="text-right totalCal">0</td>
+								</tr>
+								<tr>
+									<td>Current bank account</td>
+									<td class="text-right totalCal">17,918.90</td>
+								</tr>
+								<tr>
+									<td>Personal Bank Account</td>
+									<td class="text-right totalCal">0</td>
+								</tr>
+								<tr>
+									<td>Petty Cash</td>
+									<td class="text-right totalCal">0</td>
+								</tr>
+								<tr>
+									<td>Savings bank account</td>
+									<td class="text-right totalCal">0</td>
+								</tr>
+								<tr>
+									<td><strong>Bank Account Total</strong></td>
+									<td class="text-right totalCal">17,918.90</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+				</div>
+				</div>
+			</section>
+
+			<div class="col-lg-4 wow slideInRight" data-wow-delay="0.2s">
+			   <div class="clGap">&nbsp;</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> Notifications</h3>
+					</div>
+					<div class="panel-body">
+						<div class="NotificationSec">
+							<ul>
+								<li>
+									<h3><a href="#">Closing Bell: Sensex, Nifty end at record closing high;</a></h3>
+									<p>The Sensex was up 387.14 points at <a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+								</li>
+								<li>
+									<h3><a href="#">Closing Bell: Sensex, Nifty end at record closing high;</a></h3>
+									<p>The Sensex was up 387.14  33600.27 <a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+								</li>
+								<li>
+									<h3><a href="#">Closing Bell: Sensex, Nifty end at record closing high;</a></h3>
+									<p>The Sensex was up 387.14 points at 33600.27 <a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+								</li>
+								<li>
+									<h3><a href="#">Closing Bell: Sensex, Nifty end at record closing high;</a></h3>
+									<p>The Sensex was up 387.14 points at <a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+								</li>
+								<li>
+									<h3><a href="#">Closing Bell: Sensex, Nifty end at record closing high;</a></h3>
+									<p>The Sensex was up points at 33600.27 <a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+								</li>
+								<li>
+									<h3><a href="#">Closing Bell: Sensex, Nifty end at record closing high;</a></h3>
+									<p>The Sensex was up 387.14 points at 33600.27 <a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div> -->

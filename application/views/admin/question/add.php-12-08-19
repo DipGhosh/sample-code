@@ -1,0 +1,130 @@
+<div class="pageHeading wow fadeInDown">
+			<div class="row">
+				<div class="col-sm-6"><h2>Question</h2></div>
+				<div class="col-sm-6">
+					
+				</div>
+			</div>
+			
+			
+		</div>
+
+		<div class="entrySection2">
+			
+			<div class="wow fadeInRight animated">
+                       
+				<div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right fa-fw"></i> Add Question</h3>
+                            </div>
+                            
+                            <?php if($this->session->flashdata('error')){?>
+
+								<div class="alert alert-danger">
+								  <strong><?php echo $this->session->flashdata('error');?></strong> 
+								</div>
+
+							<?php } ?>
+
+                            <div class="panel-body">
+
+                            	<?php 
+                            	$attributes = array('class' => 'form-horizontal');
+								echo form_open_multipart('admin/question/add', $attributes);
+
+								?>
+                              
+                              <div class="form-group">
+									<label class="control-label col-xs-2">Category</label>
+									<div class="col-xs-10">
+										<select class="form-control selectcategory" name="cat_id" required="required">
+											<option value="">Select Category</option>
+											<?php if(!empty($category)){
+												foreach ($category as $categoryValue) {
+													?>
+													<option value="<?php echo $categoryValue->cat_id;?>">
+													<?php echo $categoryValue->category_name;?></option>
+											<?php 	}
+											}
+											?>
+											
+										</select>
+									
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="control-label col-xs-2">Details</label>
+									<div class="col-xs-10 ajaxDetails" >
+										<select class="form-control" name="sub_cat_id" required="required">
+											<option value="">Select Detail</option>
+											
+										</select>
+									
+									</div>
+								</div>
+                              
+
+                             	 <div class="form-group">
+									<label class="control-label col-xs-2">Question</label>
+									<div class="col-xs-10">
+									<textarea class="form-control" name="question" placeholder="Description"  ></textarea> 
+									</div>
+								</div>
+
+
+								<?php for($i =0;$i <= 3;$i++){?>
+
+								
+								<div class="choiceSection">
+
+								<div class="form-group">
+                                    <div class="rowInner">
+                                        <div class="col-lg-1">
+                                            <label><input type="radio" name="correct<?php echo $i;?>" value="Y"> Yes </label>
+                                        </div>
+                                        <div class="col-lg-11">
+                                            <div class="row">
+                                                <label class="control-label col-xs-1">Choice</label>
+                                                <div class="col-xs-11">
+                                                <input type="text" class="form-control"  name="choice[]" placeholder="Description" required="required">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+								</div>
+
+
+								
+
+								
+
+								</div>
+
+								<?php } ?>
+								<!-- <a href="javascript:void(0);" class="add"><i class="fa fa-plus" aria-hidden="true"></i>
+								</a> -->
+
+								
+								<!-- <div class="choiceSelection"></div> -->
+								
+
+								
+
+								<div class="form-group">
+									<label class="control-label col-xs-2">&nbsp;</label>
+									<div class="col-xs-10">
+									<button type="submit" class="btn btn-primary">Submit</button>
+									</div>
+								</div>
+
+
+
+							</form>
+                                
+                            </div>
+                        </div>
+                        </div>
+			</div>
+		</div>

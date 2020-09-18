@@ -1,0 +1,60 @@
+<div class="pageHeading wow fadeInDown">
+			<div class="row">
+				<div class="col-sm-6"><h2>Review</h2></div>
+				<div class="col-sm-6">
+					
+				</div>
+			</div>
+			
+			
+		</div>
+
+		<div class="entrySection2">
+			
+			<div class="wow fadeInRight animated">
+                       
+				<div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right fa-fw"></i> <?php echo $subCatDetails->sub_category_name;?></h3>
+                            </div>
+                            
+                            
+                            <div class="panel-body">
+
+                            	
+                              <?php if(!empty($rating))
+                              { 
+                              	$i = 0;
+                              	foreach ($rating as $ratingValue) {
+                              		?>
+                              		<div class="form-group">
+                              		<label class="control-label col-xs-2">User :<?php echo $this->Common_model->getValue('users', 'user_name', array('user_id' =>  $ratingValue->user_id))?></label>	
+									<label class="control-label col-xs-2"><?php echo $ratingValue->review;?></label>
+									<div class="col-xs-10">
+									<div id="fixed<?php echo $i;?>"></div>
+									</div>
+								</div>
+                              	<?php $i++; }
+
+                              }
+                              else
+                              {
+                              	?>
+                              	<div class="alert alert-danger">
+								  <strong>No review available.</strong>
+								</div>
+							 <?php }?>
+								
+
+								
+
+								
+
+								
+                                
+                            </div>
+                        </div>
+                        </div>
+			</div>
+		</div>
